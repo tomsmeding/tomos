@@ -23,7 +23,6 @@ key_print_loop:
 	int 16h
 	; ah = scancode
 	; al = ascii or zero if func key
-	xor bh,0
 	mov ah,0eh
 	int 10h
 	mov bl,al
